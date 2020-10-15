@@ -1,6 +1,17 @@
 {
-  "name": "c4a/whmcs-localapi",
-  "type": "library",
-  "license": "GPL-3.0-only",
-  "version": "1.0.0"
+	"name": "c4a/whmcs-localapi",
+  	"type": "library",
+  	"license": "GPL-3.0-only",
+  	"version": "1.0.0",
+  	"authors" : [{
+			"name" : "AGNES Gnagne",
+			"email" : "cecenho55@gmail.com",
+			"role" : "Developer"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"WHMCS\\Cloud4Africa\\" : "src"
+		}
+	},
 }
