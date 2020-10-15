@@ -35,11 +35,7 @@ class LocalApi
 	    	$domains = $results['domains']['domain'];
 	    	foreach ($domains as $domain) {
 	    		if ($domain['domainname'] == $domainName) {
-	    			$response = [
-		    			'name' => $domain['domainname'], 
-		    			'expiresAt' => $domain['expirydate'],
-		    			'status' => $domain['status']
-		    		];
+	    			$response[] = $domain;
 	    		}
 	    	}
 	    }
@@ -59,10 +55,7 @@ class LocalApi
 	    	$domains = $results['domains']['domain'];
 	    	foreach ($domains as $domain) {
 	    		if ($domain['status'] == 'Active') {
-	    			$response[] = [
-		    			'name' => $domain['domainname'], 
-		    			'expiresAt' => $domain['expirydate']
-		    		];
+	    			$response[] = $domain;
 	    		}
 	    	}
 	    }
@@ -82,10 +75,7 @@ class LocalApi
 	    	$domains = $results['domains']['domain'];
 	    	foreach ($domains as $domain) {
 	    		if ($domain['status'] == 'Pending') {
-	    			$response[] = [
-		    			'name' => $domain['domainname'], 
-		    			'expiresAt' => $domain['expirydate']
-		    		];
+	    			$response[] = $domain;
 	    		}
 	    	}
 	    }
@@ -107,10 +97,7 @@ class LocalApi
 
 	    	foreach ($domains as $domain) {
 	    		if ($domain['status'] != 'Active' && $domain['status'] != 'Pending' && $domain['expirydate'] < $date->format('Y-m-d')) {
-	    			$response[] = [
-		    			'name' => $domain['domainname'], 
-		    			'expiresAt' => $domain['expirydate']
-		    		];
+	    			$response[] = $domain;
 	    		}
 	    	}
 	    }
