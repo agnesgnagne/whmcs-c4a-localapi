@@ -35,7 +35,7 @@ class LocalApi
 	    	$domains = $results['domains']['domain'];
 	    	foreach ($domains as $domain) {
 	    		if ($domain['domainname'] == $domainName) {
-	    			$response[] = $domain;
+	    			$response = $domain;
 	    		}
 	    	}
 	    }
