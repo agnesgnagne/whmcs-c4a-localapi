@@ -114,6 +114,28 @@ class LocalApi
 
 	    return localAPI($command, $postData, $this->admin);
 	}
+
+	public function getClientProductById($clientId, $productId) {
+		$command = 'GetClientsProducts';
+	    $postData = array(
+	        'clientid' => $clientId,
+	        'pid' => $productId,
+	        'stats' => true,
+	    );
+
+	    return localAPI($command, $postData, $this->admin);
+	}
+
+	public function getClientProductByDomain($clientId, $domain) {
+		$command = 'GetClientsProducts';
+	    $postData = array(
+	        'clientid' => $clientId,
+	        'domain' => $domain,
+	        'stats' => true,
+	    );
+
+	    return localAPI($command, $postData, $this->admin);
+	}
 	
 	public function getClientDetails($clientId) {
         $command = 'GetClientsDetails';
