@@ -134,7 +134,13 @@ class LocalApi
 	        'stats' => true,
 	    );
 
-	    return localAPI($command, $postData, $this->admin);
+	    $response = localAPI($command, $postData, $this->admin);
+
+	    if ($response['totalresults'] > 0) {
+	    	return $response['products']['product'][0];
+	    }
+
+	    return null;
 	}
 	
 	public function getClientDetails($clientId) {
