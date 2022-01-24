@@ -12,6 +12,30 @@ class LocalApi
 		$this->admin = $admin;
 	}
 
+	public function countClientProductsByServerType($clientId, $serverType)
+	{
+		$sql = "SELECT COUNT(DISTINCT(hosting.id)) as count
+                FROM tblhosting AS hosting
+                JOIN tblproducts AS product
+                ON product.id = hosting.packageid
+                WHERE product.servertype = '".$serverType."' AND hosting.userid = '".$clientId."'"
+        ;
+        $results = Capsule::connection()->select($sql);
+        
+        return $results[0]->count;
+	}
+
+	public function getClientProductsByServerType($clientId, $serverType)
+	{
+		$sql = "SELECT hosting.id as id, hosting.domain as domain, hosting.domainstatus as status, product.name as name
+                FROM tblhosting AS hosting
+                JOIN tblproducts AS product
+                ON product.id = hosting.packageid
+                WHERE product.servertype = '".$serverType."' AND hosting.userid = '".$clientId."'"
+        ;
+        return Capsule::connection()->select($sql);
+	}
+
 	public function getClientDomains($clientId) {
 		$command = 'GetClientsDomains';
 	    $postData = array(
