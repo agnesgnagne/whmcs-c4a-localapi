@@ -12,6 +12,18 @@ class LocalApi
 		$this->admin = $admin;
 	}
 
+	public function getRawProducts()
+	{
+	    $sql = "SELECT * FROM tblproducts";
+        return Capsule::connection()->select($sql);
+	}
+	
+	public function getRawProduct($productId)
+	{
+	    $sql = "SELECT * FROM tblproducts WHERE id = ".$productId;
+	    return Capsule::connection()->select($sql);
+	}
+	
 	public function countClientProductsByServerType($clientId, $serverType)
 	{
 		$sql = "SELECT COUNT(DISTINCT(hosting.id)) as count

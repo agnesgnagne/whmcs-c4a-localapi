@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Accueil - Cloud4africa</title>
+    <!-- Styling -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="/templates/twenty-one/css/all.min.css?v=97a55e" rel="stylesheet">
+<link href="/templates/twenty-one/css/theme.min.css?v=97a55e" rel="stylesheet">
+<link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="/templates/twenty-one/css/custom.css" rel="stylesheet">
+
+<script>
+    var csrfToken = '489b2fd6bf3b9ce6aaf0593df1692638e2cfec4a',
+        markdownGuide = 'Guide de mise en forme',
+        locale = 'en',
+        saved = 'enregistré',
+        saving = 'enregistrement automatique',
+        whmcsBaseUrl = "",
+        requiredText = 'Requis',
+        recaptchaSiteKey = "6LdbUoUUAAAAAJz5v1jUBnRfqkJ6F6eh7KyeJrcR";
+</script>
+<script src="/templates/twenty-one/js/scripts.min.js?v=97a55e"></script>
+
+        <style>
+    .hidden {
+        display:none;
+    }
+    </style>
+<script type="text/javascript">
+//custom javascript here
+</script>
+
+</head>
+<body class="primary-bg-color" data-phone-cc-input="1">
+
+    
+
+    <header id="header" class="header">
+        
+        <div class="navbar navbar-light">
+            <div class="container">
+                <a class="navbar-brand mr-3" href="/index.php">
+                                            <img src="/assets/img/logo.png" alt="Cloud4africa" class="logo-img">
+                                    </a>
+
+                <form method="post" action="/knowledgebase/search" class="form-inline ml-auto">
+<input type="hidden" name="token" value="489b2fd6bf3b9ce6aaf0593df1692638e2cfec4a" />
+                    <div class="input-group search d-none d-xl-flex">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-default" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <input class="form-control appended-form-control font-weight-light" type="text" name="search" placeholder="Rechercher dans notre base de connaissances...">
+                    </div>
+                </form>
+
+                <ul class="navbar-nav toolbar">
+                    <li class="nav-item ml-3">
+                        <a class="btn nav-link cart-btn" href="/cart.php?a=view">
+                            <i class="far fa-shopping-cart fa-fw"></i>
+                            <span class="badge badge-info">0</span>
+                            <span class="sr-only">Votre panier</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ml-3 d-xl-none">
+                        <button class="btn nav-link" type="button" data-toggle="collapse" data-target="#mainNavbar">
+                            <span class="fas fa-bars fa-fw"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar navbar-expand-xl main-navbar-wrapper">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <form method="post" action="/knowledgebase/search" class="d-xl-none">
+<input type="hidden" name="token" value="489b2fd6bf3b9ce6aaf0593df1692638e2cfec4a" />
+                        <div class="input-group search w-100 mb-2">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <input class="form-control prepended-form-control" type="text" name="search" placeholder="Rechercher dans notre base de connaissances...">
+                        </div>
+                    </form>
+                    <ul id="nav" class="navbar-nav mr-auto">
+                            <li menuItemName="home" class="d-block no-collapse" id="Primary_Navbar-home">
+        <a class="pr-4" href="/index.php">
+            <i class="fas fa-home"></i>&nbsp;            Accueil
+                    </a>
+            </li>
+    <li menuItemName="Home" class="d-block" id="Primary_Navbar-Home">
+        <a class="pr-4" href="/index.php">
+                        Espace Client
+                    </a>
+            </li>
+    <li menuItemName="Store" class="d-block dropdown no-collapse" id="Primary_Navbar-Store">
+        <a class="pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Services Cloud
+                    </a>
+                    <ul class="dropdown-menu">
+                                                <li menuItemName="Browse Products Services" class="dropdown-item" id="Primary_Navbar-Store-Browse_Products_Services">
+                        <a href="/store" class="dropdown-item px-2 py-0">
+                                                        Tout parcourir
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Hébergement WEB (Mutualisé)" class="dropdown-item" id="Primary_Navbar-Store-Hébergement_WEB_(Mutualisé)">
+                        <a href="/store/hebergement-web-mutualise" class="dropdown-item px-2 py-0">
+                                                        Hébergement WEB (Mutualisé)
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Certificat de sécurité SSL" class="dropdown-item" id="Primary_Navbar-Store-Certificat_de_sécurité_SSL">
+                        <a href="/store/certificat-de-securite-ssl" class="dropdown-item px-2 py-0">
+                                                        Certificat de sécurité SSL
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Serveurs Cloud Dédiés ( Applicatifs )" class="dropdown-item" id="Primary_Navbar-Store-Serveurs_Cloud_Dédiés_(_Applicatifs_)">
+                        <a href="/store/serveurs-cloud-dedies-applicatifs" class="dropdown-item px-2 py-0">
+                                                        Serveurs Cloud Dédiés ( Applicatifs )
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="  Messagerie professionnelle Cloud" class="dropdown-item" id="Primary_Navbar-Store-__Messagerie_professionnelle_Cloud">
+                        <a href="/store/messagerie-professionnelle-cloud" class="dropdown-item px-2 py-0">
+                                                          Messagerie professionnelle Cloud
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Cloud BOX" class="dropdown-item" id="Primary_Navbar-Store-Cloud_BOX">
+                        <a href="/store/cloud-box" class="dropdown-item px-2 py-0">
+                                                        Cloud BOX
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Cloud Privé Virtuel (VPC)" class="dropdown-item" id="Primary_Navbar-Store-Cloud_Privé_Virtuel_(VPC)">
+                        <a href="/store/cloud-prive-virtuel-vpc" class="dropdown-item px-2 py-0">
+                                                        Cloud Privé Virtuel (VPC)
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Cloud Backup" class="dropdown-item" id="Primary_Navbar-Store-Cloud_Backup">
+                        <a href="/store/cloud-backup" class="dropdown-item px-2 py-0">
+                                                        Cloud Backup
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="spamexperts" class="dropdown-item" id="Primary_Navbar-Store-spamexperts">
+                        <a href="/store/email-spam-filtering" class="dropdown-item px-2 py-0">
+                                                        Services de courrier électronique
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Register a New Domain" class="dropdown-item" id="Primary_Navbar-Store-Register_a_New_Domain">
+                        <a href="/cart.php?a=add&domain=register" class="dropdown-item px-2 py-0">
+                                                        Enregistrer un nom de domaine
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Transfer a Domain to Us" class="dropdown-item" id="Primary_Navbar-Store-Transfer_a_Domain_to_Us">
+                        <a href="/cart.php?a=add&domain=transfer" class="dropdown-item px-2 py-0">
+                                                        Transférer un nom de domaine
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+    <li menuItemName="Knowledgebase" class="d-block" id="Primary_Navbar-Knowledgebase">
+        <a class="pr-4" href="https://docs.cloud4africa.net">
+                        Base de connaissances
+                    </a>
+            </li>
+    <li menuItemName="Network Status" class="d-block" id="Primary_Navbar-Network_Status">
+        <a class="pr-4" href="https://status.cloud4africa.net">
+                        État du réseau
+                    </a>
+            </li>
+    <li menuItemName="Contact Us" class="d-block" id="Primary_Navbar-Contact_Us">
+        <a class="pr-4" href="/contact.php">
+                        Contactez-nous
+                    </a>
+            </li>
+    <li class="d-none dropdown collapsable-dropdown">
+        <a class="dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plus
+        </a>
+        <ul class="collapsable-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenu">
+        </ul>
+    </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                            <li menuItemName="Account" class="d-block no-collapse dropdown no-collapse" id="Secondary_Navbar-Account">
+        <a class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                        Espace client
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                                                <li menuItemName="Login" class="dropdown-item" id="Secondary_Navbar-Account-Login">
+                        <a href="/clientarea.php" class="dropdown-item px-2 py-0">
+                                                        Connexion
+                                                    </a>
+                    </li>
+                                                                <li menuItemName="Register" class="dropdown-item" id="Secondary_Navbar-Account-Register">
+                        <a href="/register.php" class="dropdown-item px-2 py-0">
+                                                        Inscription
+                                                    </a>
+                    </li>
+                                                                <div class="dropdown-divider"></div>
+                                                                <li menuItemName="Forgot Password?" class="dropdown-item" id="Secondary_Navbar-Account-Forgot_Password?">
+                        <a href="/password/reset" class="dropdown-item px-2 py-0">
+                                                        Mot de passe oublié?
+                                                    </a>
+                    </li>
+                                        </ul>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <nav class="master-breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                        Accueil
+                    </li>
+    </ol>
+        </div>
+    </nav>
+
+        
+                        <form method="post" action="domainchecker.php" id="frmDomainHomepage">
+<input type="hidden" name="token" value="489b2fd6bf3b9ce6aaf0593df1692638e2cfec4a" />
+    <div class="home-domain-search bg-white">
+        <div class="container">
+            <div class="p-5 clearfix">
+                <h2 class="text-center">Sécurisez votre nom de domaine</h2>
+                <input type="hidden" name="transfer" />
+                <div class="input-group-wrapper">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="domain" placeholder="exemple: example.com" autocapitalize="none">
+                        <span class="input-group-append d-none d-sm-block">
+                                                            <button type="submit" class="btn btn-primary" id="btnDomainSearch">
+                                    Chercher
+                                </button>
+                                                                                        <button type="submit" id="btnTransfer" data-domain-action="transfer" class="btn btn-success">
+                                    Transfert
+                                </button>
+                                                    </span>
+                    </div>
+                </div>
+                <div class="row d-sm-none">
+                                            <div class="col-6">
+                            <button type="submit" class="btn btn-primary btn-block" id="btnDomainSearch2">
+                                Chercher
+                            </button>
+                        </div>
+                                                                <div class="col-6">
+                            <button type="submit" id="btnTransfer2" data-domain-action="transfer" class="btn btn-success btn-block">
+                                Transfert
+                            </button>
+                        </div>
+                                    </div>
+                
+                                    <ul class="tld-logos">
+                                                                                    <li>
+                                    <img src="/assets/img/tld_logos/net.png">
+                                                                            8,000 CFA
+                                                                    </li>
+                                                                                                                <li>
+                                    <img src="/assets/img/tld_logos/com.png">
+                                                                            8,000 CFA
+                                                                    </li>
+                                                                        </ul>
+                
+                <a href="/domain/pricing" class="btn btn-link btn-sm float-right">View all pricing</a>
+            </div>
+        </div>
+    </div>
+</form>
+            
+    <section id="main-body">
+        <div class="container">
+            <div class="row">
+
+                        <div class="col-12 primary-content">
+
+
+    <h2 class="text-center m-4">Browse our Products/Services</h2>
+
+    <div class="card-columns home">
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Hébergement WEB (Mutualisé)
+                    </h3>
+                    <p>En optant pour un pack hébergement Cloud4africa, vous faites le choix d’une solution d’hébergement complète pour votre site Web, avec tout ce dont vous avez besoin pour réaliser vos projets. En externalisant l’hébergement Web de vos sites et applications, vous éliminez toute contrainte matérielle et bénéficiez d’une sécurité de vos données largement accrue.</p>
+                    <a href="/store/hebergement-web-mutualise" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Certificat de sécurité SSL
+                    </h3>
+                    <p>Les certificats SSL conservent les interactions privées en ligne même s&#039;ils traversent l&#039;Internet public et ils aident les clients à acquérir la confiance pour effectuer des transactions avec votre site Web.</p>
+                    <a href="/store/certificat-de-securite-ssl" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Serveurs Cloud Dédiés ( Applicatifs )
+                    </h3>
+                    <p>Nos serveurs vous garantissent performance, flexibilité et sécurité. Nous proposons une large gamme de serveurs pour tous les besoins, avec des composants de dernière génération et un trafic illimité. Bénéficiez d’un accès complet avec droits d’administrateurs et ressources dédiées pour chaque VM. Choisissez parmi une large gamme de systèmes d’exploitation.</p>
+                    <a href="/store/serveurs-cloud-dedies-applicatifs" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                          Messagerie professionnelle Cloud
+                    </h3>
+                    <p>Basé sur Zimbra Collaboration, le travail d&#039;équipe est plus efficace grâce à la gestion des tâches, des contacts, des emails et la fonction calendrier. Vous benéficiez également de la synchronisation en temps réel entre les ordinateurs de bureau, ordinateurs portables, tablettes, smartphones et d&#039;une interface Webmail de dernière génération.</p>
+                    <a href="/store/messagerie-professionnelle-cloud" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Cloud BOX
+                    </h3>
+                    <p>Cloud BOX est une offre de stockage &amp; de collaboration pour Entreprise qui couplée à l&#039;infrastructure CLOUD CI , fournit des applications web, desktop &amp; mobiles qui permettent de partager et synchroniser vos documents professionnels, partout et en toute simplicité. Pour que vous puissiez être certain que vos données restent sous le contrôle de votre société, en toute sécurité, chaque client bénéficie d&#039;une infrastructure totalement dédiée. </p>
+                    <a href="/store/cloud-box" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Cloud Privé Virtuel (VPC)
+                    </h3>
+                    <p>Le Cloud Privé Virtuel, est un espace de ressources Cloud totalement isolé du cloud fourni au grand public et totalement dédié. Vous avez à travers cette offre, le contrôle de votre environnement pour y configurer en toute liberté vos ressources IaaS en matières de calcul, volumes, stockage, réseau et services de gouvernance.</p>
+                    <a href="/store/cloud-prive-virtuel-vpc" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Cloud Backup
+                    </h3>
+                    <p>Cloud Backup est une solution de sauvegarde locale et Cloud au cœur de notre infrastructure. Basée sur la technologie Acronis Anydata, elle vous permet de sauvegarder et restaurer vos postes de travail, environnements virtuels et périphériques mobiles avec une capacité allant jusqu’à plus de 10 To de données.</p>
+                    <a href="/store/cloud-backup" class="btn btn-block btn-outline-primary">
+                        Parcourir les produits
+                    </a>
+                </div>
+            </div>
+
+        
+                    <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Enregistrer un nom de domaine
+                    </h3>
+                    <p>Sécurisez votre nom de domaine en l'enregistrant aujourd'hui</p>
+                    <a href="/cart.php?a=add&domain=register" class="btn btn-block btn-outline-primary">
+                        Rechercher un nom de domaine
+                    </a>
+                </div>
+            </div>
+                            <div class="card mb-3">
+                <div class="card-body p-lg-4 p-xl-5 text-center">
+                    <h3 class="card-title pricing-card-title">
+                        Transférez votre domaine
+                    </h3>
+                    <p>Transférez maintenant pour étendre votre domaine d'un an</p>
+                    <a href="/cart.php?a=add&domain=transfer" class="btn btn-block btn-outline-primary">
+                        Transférez votre domaine
+                    </a>
+                </div>
+            </div>
+            </div>
+
+<h2 class="text-center m-4">Comment pouvons-nous aider aujourd'hui</h2>
+
+<div class="row my-5 action-icon-btns">
+    <div class="col-6 col-md-4 col-lg">
+        <a href="/announcements" class="card-accent-teal">
+            <figure class="ico-container">
+                <i class="fal fa-bullhorn"></i>
+            </figure>
+            Actualités
+        </a>
+    </div>
+    <div class="col-6 col-md-4 col-lg">
+        <a href="serverstatus.php" class="card-accent-pomegranate">
+            <figure class="ico-container">
+                <i class="fal fa-server"></i>
+            </figure>
+            État du réseau
+        </a>
+    </div>
+    <div class="col-6 col-md-4 col-lg">
+        <a href="/knowledgebase" class="card-accent-sun-flower">
+            <figure class="ico-container">
+                <i class="fal fa-book"></i>
+            </figure>
+            Base de connaissances
+        </a>
+    </div>
+    <div class="col-6 col-md-4 offset-md-2 offset-lg-0 col-lg">
+        <a href="/download" class="card-accent-asbestos">
+            <figure class="ico-container">
+                <i class="fal fa-download"></i>
+            </figure>
+            Téléchargements
+        </a>
+    </div>
+    <div class="col-6 offset-3 offset-md-0 col-md-4 col-lg">
+        <a href="submitticket.php" class="card-accent-green">
+            <figure class="ico-container">
+                <i class="fal fa-life-ring"></i>
+            </figure>
+            Soumettre un ticket
+        </a>
+    </div>
+</div>
+
+<h2 class="text-center m-4">Votre compte</h2>
+
+<div class="row my-5 action-icon-btns">
+    <div class="col-6 col-md-4 col-lg">
+        <a href="clientarea.php" class="card-accent-midnight-blue">
+            <figure class="ico-container">
+                <i class="fal fa-home"></i>
+            </figure>
+            Votre compte
+        </a>
+    </div>
+    <div class="col-6 col-md-4 col-lg">
+        <a href="clientarea.php?action=services" class="card-accent-midnight-blue">
+            <figure class="ico-container">
+                <i class="far fa-cubes"></i>
+            </figure>
+            Gérer les services
+        </a>
+    </div>
+            <div class="col-6 col-md-4 col-lg">
+            <a href="clientarea.php?action=domains" class="card-accent-midnight-blue">
+                <figure class="ico-container">
+                    <i class="fal fa-globe"></i>
+                </figure>
+                Gérer les domaines
+            </a>
+        </div>
+        <div class="col-6 col-md-4 offset-md-2 offset-lg-0 col-lg">
+        <a href="supporttickets.php" class="card-accent-midnight-blue">
+            <figure class="ico-container">
+                <i class="fal fa-comments"></i>
+            </figure>
+            Demandes d'assistance
+        </a>
+    </div>
+    <div class="col-6 offset-3 offset-md-0 col-md-4 col-lg">
+        <a href="clientarea.php?action=masspay&all=true" class="card-accent-midnight-blue">
+            <figure class="ico-container">
+                <i class="fal fa-credit-card"></i>
+            </figure>
+            Effectuer un paiement
+        </a>
+    </div>
+</div>
+
+
+                    </div>
+
+                    </div>
+                                    <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <ul class="list-inline mb-7 text-center float-lg-right">
+                
+                                    <li class="list-inline-item">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#modalChooseLanguage">
+                            <div class="d-inline-block align-middle">
+                                <div class="iti-flag fr"></div>
+                            </div>
+                            Français
+                            /
+                            
+                            XOF
+                        </button>
+                    </li>
+                            </ul>
+
+            <ul class="nav justify-content-center justify-content-lg-start mb-7">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.php">
+                        Contactez-nous
+                    </a>
+                </li>
+                                    <li class="nav-item">
+                        <a class="nav-link" href="https://accounts.cloud4africa.net/cgu.html" target="_blank">Conditions d'utilisation</a>
+                    </li>
+                            </ul>
+
+            <p class="copyright mb-0">
+                Copyright &copy; 2022 Cloud4africa. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <div id="fullpage-overlay" class="w-hidden">
+        <div class="outer-wrapper">
+            <div class="inner-wrapper">
+                <img src="/assets/img/overlay-spinner.svg" alt="">
+                <br>
+                <span class="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Fermer</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Chargement en cours...
+                </div>
+                <div class="modal-footer">
+                    <div class="float-left loader">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        Chargement en cours...
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary modal-submit">
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form method="get" action="/?">
+        <div class="modal modal-localisation" id="modalChooseLanguage" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                                                    <h5 class="h5 pt-5 pb-3">Choisir la langue</h5>
+                            <div class="row item-selector">
+                            <input type="hidden" name="language" value="">
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="arabic">
+                                            العربية
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="azerbaijani">
+                                            Azerbaijani
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="catalan">
+                                            Català
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="chinese">
+                                            中文
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="croatian">
+                                            Hrvatski
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="czech">
+                                            Čeština
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="danish">
+                                            Dansk
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="dutch">
+                                            Nederlands
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="english">
+                                            English
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="estonian">
+                                            Estonian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="farsi">
+                                            Persian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item active" data-value="french">
+                                            Français
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="german">
+                                            Deutsch
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="hebrew">
+                                            עברית
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="hungarian">
+                                            Magyar
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="italian">
+                                            Italiano
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="macedonian">
+                                            Macedonian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="norwegian">
+                                            Norwegian
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="portuguese-br">
+                                            Português
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="portuguese-pt">
+                                            Português
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="romanian">
+                                            Română
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="russian">
+                                            Русский
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="spanish">
+                                            Español
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="swedish">
+                                            Svenska
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="turkish">
+                                            Türkçe
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="ukranian">
+                                            Українська
+                                        </a>
+                                    </div>
+                                                            </div>
+                                                                            <p class="h5 pt-5 pb-3">Sélectionnez la devise</p>
+                            <div class="row item-selector">
+                                <input type="hidden" name="currency" value="">
+                                                                    <div class="col-4">
+                                        <a href="#" class="item active" data-value="1">
+                                             XOF
+                                        </a>
+                                    </div>
+                                                                    <div class="col-4">
+                                        <a href="#" class="item" data-value="4">
+                                            $ USD
+                                        </a>
+                                    </div>
+                                                            </div>
+                                            </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default">Appliquer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    
+    <form action="#" id="frmGeneratePassword">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h4 class="modal-title">
+                        Générer un mot de passe
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger w-hidden" id="generatePwLengthError">
+                        Veuillez entrer un nombre entre 8 et 64 pour la longueur du mot de passe
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwLength" class="col-sm-4 col-form-label">Longueur du mot de passe</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="generatePwOutput" class="col-sm-4 col-form-label">Mot de passe généré</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                Générer un nouveau mot de passe
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        Copier dans le presse-papiers et insérer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+    <script type="text/javascript" id="metricscubestats" data-t="32957f1c8ba50c65374dae4aa09cba2c8a0b0782" data-h="" src="https://api.metricscube.io/mcs.js"></script>
+
+
+<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=244043958"></script>
+</body>
+</html>
