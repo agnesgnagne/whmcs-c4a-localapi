@@ -55,8 +55,47 @@ class LocalApi
                 JOIN tblproducts AS product
                 ON product.id = hosting.packageid
                 WHERE product.servertype = '".$serverType."' AND hosting.userid = '".$clientId."' AND hosting.id = '".$productId."'"
-                    ;
-                    return Capsule::connection()->select($sql);
+        ;
+
+        return Capsule::connection()->select($sql);
+	}
+
+
+	public function countClientProductsBySlug($clientId, $slug)
+	{
+		$sql = "SELECT COUNT(DISTINCT(hosting.id)) as count
+                FROM tblhosting AS hosting
+                JOIN tblproducts AS product
+                ON product.id = hosting.packageid
+                WHERE product.slug = '".$slug."' AND hosting.userid = '".$clientId."'"
+        ;
+
+        $results = Capsule::connection()->select($sql);
+        
+        return $results[0]->count;
+	}
+
+	public function getClientProductsBySlug($clientId, $slug)
+	{
+		$sql = "SELECT hosting.id as id, hosting.domain as domain, hosting.domainstatus as status, product.name as name
+                FROM tblhosting AS hosting
+                JOIN tblproducts AS product
+                ON product.id = hosting.packageid
+                WHERE product.slug = '".$slug."' AND hosting.userid = '".$clientId."'"
+        ;
+        return Capsule::connection()->select($sql);
+	}
+
+	public function getClientProductBySlug($clientId, $productId, $slug)
+	{
+	    $sql = "SELECT hosting.id as id, hosting.domain as domain, hosting.domainstatus as status, product.name as name
+                FROM tblhosting AS hosting
+                JOIN tblproducts AS product
+                ON product.id = hosting.packageid
+                WHERE product.slug = '".$slug."' AND hosting.userid = '".$clientId."' AND hosting.id = '".$productId."'"
+        ;
+
+        return Capsule::connection()->select($sql);
 	}
 
 	public function getClientProductRegion($productId)
